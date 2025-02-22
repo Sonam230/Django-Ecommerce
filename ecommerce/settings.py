@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-bsi!k43um!)dnz%ar5cwc8=8f2r$vxq8(wcj=1a4tcih268og8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['13.60.84.53', 'localhost', '127.0.0.1']
+
 
 
 # Application definition
@@ -83,11 +84,22 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+   'default': {
+       'ENGINE': 'django.db.backends.postgresql',
+       'NAME': 'mydemodb1',
+       'USER': 'sonamdb',
+       'PASSWORD': 'Sonam2302',
+       'HOST': 'mydatabase.c7gmuscqmxw8.ap-south-1.rds.amazonaws.com',
+       'PORT': '5432',
+   }
 }
 
 
