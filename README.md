@@ -3,6 +3,7 @@ This guide explains how to containerize your Django project using Docker.
 📌 Prerequisites
 Docker installed on your system.
 A Django project with requirements.txt listing all dependencies.
+
 1️⃣ Create a Dockerfile
 Inside your project root directory, create a Dockerfile:
 
@@ -46,6 +47,7 @@ node_modules/
 Run the following command to build the Docker image:
 
 docker build -t django-app .
+
 4️⃣ Run the Docker Container
 To start a container from the image:
 
