@@ -95,9 +95,9 @@ DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql',
        'NAME': 'mydemodb1',
-       'USER': 'sonamdb',
-       'PASSWORD': 'Sonam2302',
-       'HOST': 'mydatabase.c7gmuscqmxw8.ap-south-1.rds.amazonaws.com',
+       'USER': '', --Add your username
+       'PASSWORD': '',--Add your password
+       'HOST': '',--Add host
        'PORT': '5432',
    }
 }
